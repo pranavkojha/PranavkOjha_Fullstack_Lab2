@@ -16,6 +16,7 @@ public class calculateDenominator {
         System.out.println("Enter number of denominations: ");
         this.numDenominations = sc.nextInt();
         System.out.println("Enter " + this.numDenominations + " denomination values: ");
+        this.denominations = new int[this.numDenominations];
         for(int i =0; i< this.numDenominations ; i++) {
             this.denominations[i] = sc.nextInt();
         }

@@ -4,6 +4,9 @@ import com.TravelDenominator.calculateDenominator;
 
 public class Main {
 
+    /**
+     * Method to demo daily target price match.
+     */
     public static void demoDailyTargetDeterminator() {
         // Create instance of object and initialize transactions.
         Scanner sc = new Scanner(System.in);
@@ -19,15 +22,17 @@ public class Main {
         }
     }
 
+    /**
+     * Daily price target match method.
+     */
     public static void demoCalculateDenominator() {
-        int[] arr = {60,5,12,78,25};
-        calculateDenominator d = new calculateDenominator(arr, 128);
+        calculateDenominator d = new calculateDenominator();
         d.canMatchTargetPrice();
     }
     public static void main(String[] args) {
         // Demo of daily target program
         demoDailyTargetDeterminator();
-
+        System.out.println("\n+++++++++++++++++++++\n");
         // Demo of traveller denominator
         demoCalculateDenominator();
     }
